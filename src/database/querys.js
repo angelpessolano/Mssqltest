@@ -1,0 +1,9 @@
+export const queries = {
+  getAllProducts: "SELECT * FROM Products",
+  addNewProduct:
+    "INSERT INTO Products (Id,Name,Description,Quantity) VALUES (@Id,@Name, @Description, @Quantity)",
+  getProductById: "SELECT * FROM Products WHERE ID=@Id",
+  //'DELETE FROM [webstore].[dbo].[Products] WHERE ID=@Id
+  deleteProductById: "DELETE FROM Products WHERE ID=@Id",
+  updateProductById: "UPDATE Products SET Name = @Name, Description = @Description, Quantity = @Quantity WHERE Id=@Id",
+};

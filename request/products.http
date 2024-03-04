@@ -8,6 +8,6 @@ POST {{api}}
 
 Content-Type: application/json
 {
-    "name":"microphone",
+    "name":"microphone55555",
     "description":"anywhere"
 }

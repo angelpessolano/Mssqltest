@@ -3,7 +3,7 @@ import sql from 'mssql'
 const dbSettings = {
     user :'pesso93',
     password:'pesso93',
-    server:'ANGELACER',
+    server:'AngelAcer',
     database:'webstore',
     options:{
     encrypt: true,
@@ -28,3 +28,5 @@ export async function getConnection(){
 // console.log(result);
 }
 //getConnection();
+
+export {sql};
