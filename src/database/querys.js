@@ -8,11 +8,10 @@ export const queries = {
   updateProductById: "UPDATE Products SET Name = @Name, Description = @Description, Quantity = @Quantity WHERE Id=@Id",
 
   ///////
-  getUsers: "SELECT * FROM UsersR",
-  registerNewUser: "INSERT INTO UsersR (Id,Name,Lastname,Address,Email) VALUES (@Id,@Name, @Lastname,@Address, @Email)",
-  getUserById: "SELECT * FROM UsersR WHERE ID=@Id",  
-  deleteUserById: "DELETE FROM UsersR WHERE ID=@Id",
-  updateUserById: "UPDATE UsersR SET Name = @Name, Lastname = @Lastname, Address = @Address, Email=@Email WHERE Id=@Id",
+  getUsers: "SELECT * FROM Users",
+  getUserById: "SELECT * FROM Users WHERE ID=@Id",  
+  deleteUserById: "DELETE FROM Users WHERE ID=@Id",
+  updateUserById: "UPDATE Users SET Name = @Name, Lastname = @Lastname, Address = @Address, Email=@Email WHERE Id=@Id",
 
 
   
