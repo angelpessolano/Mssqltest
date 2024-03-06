@@ -97,11 +97,7 @@ export const updateUserById = async (req, res) => {
   const { Id } = req.params;
   const { Name, Lastname,Address,Email } = req.body;
 
-  if (Name == null || Lastname == null || Address == null || Email == null ||Id==null) {
-    return res.status(400).json({
-      msg: "Bad request. Please fill all fields",
-    });
-  }
+  
   try{
 
   const pool = await getConnection();
