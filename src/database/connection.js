@@ -1,10 +1,11 @@
 import sql from 'mssql'
+import { DB_NAME,SERVER_NAME,DB_USER,DB_PASSWORD } from "../config";
 
 const dbSettings = {
-    user :'pesso93',
-    password:'pesso93',
-    server:'AngelAcer',
-    database:'webstore',
+    user :DB_USER,
+    password:DB_PASSWORD,
+    server:SERVER_NAME,
+    database:DB_NAME,
     options:{
     encrypt: true,
     trustServerCertificate: true

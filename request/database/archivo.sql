@@ -1,0 +1,19 @@
+CREATE TABLE Users (
+  Id INT IDENTITY(1,1) PRIMARY KEY,
+  Email VARCHAR(255) UNIQUE,
+  Password VARCHAR(255),
+  Salt VARCHAR(255),
+  Name VARCHAR(255),
+  Lastname VARCHAR(255),
+  Address VARCHAR(255)
+);
+
+----
+
+
+CREATE TABLE Products(
+	 Id INT IDENTITY(1,1) PRIMARY KEY,
+	 Name VARCHAR(255),
+     Description VARCHAR(255),	
+	 Quantity INT NULL);
+
